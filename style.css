@@ -1,0 +1,429 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ================= BASE ================= */
+body {
+  min-height: 100vh;
+  background: #000000;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* ================= LAYOUT ================= */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+  width: 20%;
+  min-width: 240px;
+  background: #000000;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.profile-card {
+  width: 85%;
+  background: #0b0b0b;
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  border: 1px solid #1f1f1f;
+}
+
+.profile-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  width: 220px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center 30%;
+  border-radius: 24px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.profile-contact {
+  font-size: 0.9rem;
+  color: #d1d5db;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+.resume-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #22c55e;
+  color: #000000;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.resume-btn:hover {
+  background: #16a34a;
+}
+
+/* ================= CONTENT ================= */
+.content {
+  width: 80%;
+  padding: 50px 70px;
+  overflow-y: auto;
+}
+
+/* ================= HERO ================= */
+.hero-text h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.highlight {
+  color: #22c55e;
+}
+
+.subtitle {
+  margin-top: 8px;
+  font-size: 1.05rem;
+  color: #e5e5e5;
+}
+
+.intro {
+  margin-top: 14px;
+  max-width: 720px;
+  color: #d1d5db;
+}
+
+/* ================= ABOUT ================= */
+.about-section {
+  margin-top: 60px;
+}
+
+.about-section h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+.about-section h2 span {
+  color: #22c55e;
+}
+
+.about-section p {
+  color: #d1d5db;
+  margin-bottom: 18px;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+/* ================= SKILLS ================= */
+.skills-section {
+  margin-top: 70px;
+}
+
+.skills-section h2 {
+  font-size: 2.4rem;
+  margin-bottom: 25px;
+}
+
+.skills-section h2 span {
+  color: #22c55e;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.skill {
+  padding: 14px 26px;
+  border-radius: 14px;
+  border: 1px solid #1f1f1f;
+  background: #0b0b0b;
+  font-size: 0.9rem;
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+
+.skill:hover {
+  border-color: #22c55e;
+  color: #22c55e;
+}
+/* ================= PROJECTS ================= */
+.projects-section {
+  margin-top: 70px;
+}
+
+.projects-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
+
+.projects-section h2 span {
+  color: #22c55e;
+}
+
+/* GRID */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 30px;
+}
+
+/* ===== PROJECT CARD (CLEAN PREMIUM STYLE) ===== */
+.project-card {
+  background: #0f0f0f;
+  border-radius: 18px;
+  padding: 28px;
+  border: 1px solid #1f1f1f;
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: #22c55e;
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.15);
+}
+
+/* TITLE */
+.project-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+/* DESCRIPTION */
+.project-card p {
+  color: #d1d5db;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  text-align: justify;
+}
+
+/* TECH STACK */
+.tech {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin-bottom: 20px;
+}
+
+/* BUTTON */
+.project-btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 30px;
+  background: #22c55e;
+  color: #000000;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.project-btn:hover {
+  background: #16a34a;
+}
+
+
+/* ================= CERTIFICATES ================= */
+
+/* NEW CLASS FOR CERTIFICATES */
+.certificate-card {
+  background: #0b0b0b;
+  border-radius: 20px;
+  border: 2px solid #22c55e;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(34, 197, 94, 0.2);
+}
+
+/* CERTIFICATE IMAGE */
+.certificate-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;   /* Shows full badge */
+  background: #111111;
+  display: block;
+  padding: 20px;
+}
+
+/* ================= CONTACT ================= */
+.contact-section {
+  margin-top: 60px;
+}
+
+.content {
+  padding-right: 150px;   /* give more safe space */
+}
+
+.contact-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
+
+.contact-section h2 span {
+  font-size: 2.2rem;
+  color: #22c55e;
+}
+
+.contact-desc {
+  color: #d1d5db;
+  margin-bottom: 40px;
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 22px;
+  background: #0b0b0b;
+  border: 1px solid #1f1f1f;
+  border-radius: 14px;
+  transition: 0.3s ease;
+}
+
+.contact-card:hover {
+  border-color: #22c55e;
+  transform: translateY(-3px);
+}
+
+.contact-card .icon {
+  font-size: 1.5rem;
+  color: #22c55e;
+}
+
+.contact-card .label {
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.contact-card .value {
+  color: #ffffff;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+  border-top: 1px solid #1f1f1f;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+/* ================= FLOATING RIGHT MENU ================= */
+.floating-menu {
+  position: fixed;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  z-index: 1000;
+}
+
+.floating-menu a {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: #0b0b0b;
+  border: 1px solid #1f1f1f;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #22c55e;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.floating-menu a:hover {
+  background: #22c55e;
+  color: #000000;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(34, 197, 94, 0.4);
+}
+
+
+/* ===== Tooltip Label ===== */
+.floating-menu a::after {
+  content: attr(data-label);
+  position: absolute;
+  right: 50px;
+  max-width: 120px;
+  text-align: center;
+  background: #111111;
+  color: #22c55e;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: 0.3s ease;
+  pointer-events: none;
+  border: 1px solid #1f1f1f;
+}
+
+/* Show text on hover */
+.floating-menu a:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .floating-menu {
+    display: none;
+  }
+}

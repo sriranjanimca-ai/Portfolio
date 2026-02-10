@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sriranjani | Portfolio</title>
+
+  <meta name="description"
+        content="Sriranjani – Python, Machine Learning, Deep Learning Developer Portfolio" />
+
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- FLOATING RIGHT MENU -->
+<!--
+<div class="floating-menu">
+  <a href="#home" title="Home">🏠</a>
+  <a href="#about" title="About">👤</a>
+  <a href="#projects" title="Projects">📁</a>
+  <a href="#certificates" title="Certificates">🏆</a>
+  <a href="#contact" title="Contact">✉️</a>
+</div>
+-->
+<div class="floating-menu">
+  <a href="#home" data-label="Home"><i class="fa-solid fa-house"></i></a>
+  <a href="#about" data-label="About"><i class="fa-solid fa-user"></i></a>
+  <a href="#projects" data-label="Projects"><i class="fa-solid fa-folder-open"></i></a>
+  <a href="#certificates" data-label="Certificates"><i class="fa-solid fa-award"></i></a>
+  <a href="#contact" data-label="Contact"><i class="fa-solid fa-envelope"></i></a>
+</div>
+
+
+
+<!-- MAIN LAYOUT -->
+<div class="layout">
+
+  <!-- LEFT SIDE -->
+  <aside class="sidebar">
+    <div class="profile-card">
+      <h2 class="profile-name">Sriranjani R</h2>
+      <img src="assets/profile.png" alt="Sriranjani R" class="profile-img">
+
+      <p class="profile-contact">
+        sriranjanimca@gmail.com<br>
+        +91 94999 11268
+      </p>
+
+      <a href="assets/resume.pdf" class="resume-btn" target="_blank">
+        Resume
+      </a>
+    </div>
+  </aside>
+
+  <!-- RIGHT CONTENT -->
+  <main class="content">
+
+    <!-- HERO -->
+    <section id="home" class="hero-text">
+      <h1>I am <span class="highlight">Sriranjani R</span></h1>
+
+      <p class="subtitle">
+        Python Developer | Machine Learning | Deep Learning
+      </p>
+
+      <p class="intro">
+        Aspiring Python and Machine Learning developer focused on building
+        real-world, data-driven applications and intelligent solutions.
+      </p>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section">
+      <h2>About <span>Me</span></h2>
+
+      <p>
+        Aspiring Python Developer and Machine Learning enthusiast with hands-on
+        experience in building real-world applications and data-driven solutions.
+        Skilled in Python, SQL, data analysis, and machine learning fundamentals.
+      </p>
+
+      <p>
+        I have built practical projects including an Invoice Management System
+        using Python and file handling, a Boutique Management System using Python
+        and MySQL, and a Power Consumption Prediction project using machine learning.
+      </p>
+
+      <p>
+        Currently upskilling in Flask and advanced Machine Learning / Deep Learning
+        to build scalable and intelligent applications. Open to full-time
+        opportunities where I can contribute, learn, and grow.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills-section">
+      <h2>Key <span>Skills</span></h2>
+      <div class="skill-tags">
+        <span class="skill">Python</span>
+        <span class="skill">Machine Learning</span>
+        <span class="skill">Deep Learning</span>
+        <span class="skill">MySQL</span>
+        <span class="skill">FastAPI</span>
+        <span class="skill">Django</span>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects-section">
+      <h2>My <span>Projects</span></h2>
+
+      <div class="project-grid">
+
+        <div class="project-card">
+          <h3>Boutique Management System</h3>
+          <p>
+            Developed a Python and MySQL based system to manage inventory,
+            customer records, sales, and billing operations with full CRUD functionality.
+            Focused on automation and structured database design.
+          </p>
+          <p class="tech">Python · MySQL · CRUD · Database Design</p>
+          <a href="https://github.com/sriranjanimca-ai/Python_Boutique.git" target="_blank" class="project-btn">See My Work</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Invoice Management System</h3>
+          <p>
+            Built a Python-based system to generate, store, and manage customer invoices.
+            Implemented itemized billing, tax calculations, and structured record management.
+          </p>
+          <p class="tech">Python · File Handling · Billing Logic · Data Management</p>
+          <a href="https://github.com/sriranjanimca-ai/Python_BillingSystem.git" target="_blank" class="project-btn">See My Work</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates" class="projects-section">
+      <h2>My <span>Certificates</span></h2>
+
+      <div class="project-grid">
+
+        <div class="certificate-card">
+          <a href="https://www.credly.com/badges/913b226a-483d-450d-af22-b3a7004162e4/public_url"
+             target="_blank" rel="noopener noreferrer">
+            <img src="assets/certificates/certificate1.png"
+                 alt="Machine Learning Certificate">
+          </a>
+        </div>
+
+        <div class="certificate-card">
+          <a href="https://www.credly.com/badges/ba99739c-fdf7-4f15-aa0b-52faa7f1bf83/public_url"
+             target="_blank" rel="noopener noreferrer">
+            <img src="assets/certificates/certificate2.png"
+                 alt="Gen AI Certificate">
+          </a>
+        </div>
+
+        <div class="certificate-card">
+          <a href="https://www.credly.com/badges/893c112e-11b5-4f00-b5dc-a9a504201899/public_url"
+             target="_blank" rel="noopener noreferrer">
+            <img src="assets/certificates/certificate3.png"
+                 alt="Database Certificate">
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+      <h2>Let's <span>Connect</span></h2>
+
+      <p class="contact-desc">
+        I’m always open to discussing new projects, innovative ideas, and exciting career opportunities.
+        Feel free to reach out — I’d be happy to connect and explore how we can create meaningful solutions together.
+      </p>
+
+      <div class="contact-cards">
+
+        <div class="contact-card">
+          <div class="icon">✉️</div>
+          <div>
+            <p class="label">Mail Me</p>
+            <p class="value">sriranjanimca@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="icon">in</div>
+          <div>
+            <p class="label">LinkedIn</p>
+            <a class="value"
+               href="https://www.linkedin.com/in/sriranjani-raman-mca1526/"
+               target="_blank">
+               linkedin.com/in/sriranjani-raman-mca1526
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="icon">📞</div>
+          <div>
+            <p class="label">Call Me</p>
+            <p class="value">+91 94999 11268</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Sriranjani R | Python & Machine Learning Developer</p>
+    </footer>
+
+  </main>
+</div>
+
+</body>
+</html>
