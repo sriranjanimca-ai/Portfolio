@@ -88,7 +88,6 @@ body {
 .content {
   width: 80%;
   padding: 50px 70px;
-  overflow-y: auto;
 }
 
 /* ================= HERO ================= */
@@ -427,3 +426,4 @@ footer {
     display: none;
   }
 }
+
